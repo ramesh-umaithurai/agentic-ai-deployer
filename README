@@ -1,0 +1,36 @@
+# Agentic AI Cloud Run Deployer
+
+An intelligent agent that automatically detects .NET solutions and deploys them to Google Cloud Run with PostgreSQL.
+
+## Features
+
+- 🤖 **Intelligent Detection**: Automatically detects .NET projects, Dockerfiles, and dependencies
+- 🚀 **Cloud Run Deployment**: Deploys to serverless Cloud Run (default) or GKE (optional)
+- 🗄️ **Database Automation**: Automatically provisions Cloud SQL PostgreSQL
+- 🔄 **CI/CD Setup**: Configures automatic builds and deployments
+- 📊 **Monitoring**: Sets up logging, monitoring, and cost tracking
+- 💰 **Cost Optimization**: Suggests cost-effective configurations
+
+## Quick Start
+
+### Prerequisites
+
+1. Google Cloud Project with billing enabled
+2. Python 3.8+ installed
+3. Google Cloud SDK installed
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <your-repo>
+cd agentic-ai-deployer
+
+# Install dependencies
+make install
+
+# Setup GCP authentication
+make gcp-auth
+
+# Deploy your .NET solution
+make deploy
